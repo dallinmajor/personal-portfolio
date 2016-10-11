@@ -3,6 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.devicons {
+  font-size: 100px;
+  color: #1C3144;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,19 +25,19 @@ p.large {
   font-size: 16px;
 }
 a,
-a:hover,
-a:focus,
+a.active,
 a:active,
-a.active {
+a:focus,
+a:hover {
   outline: none;
 }
 a {
   color: #fed136;
 }
-a:hover,
-a:focus,
+a.active,
 a:active,
-a.active {
+a:focus,
+a:hover {
   color: #fec503;
 }
 h1,
@@ -154,10 +158,10 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand.active,
 .navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:hover {
   color: #fec503;
 }
 .navbar-custom .navbar-collapse {
@@ -171,8 +175,8 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   font-size: 12px;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:hover {
   background-color: #fed136;
 }
 .navbar-custom .nav li a {
@@ -182,8 +186,8 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: white;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:hover {
   color: #fed136;
   outline: none;
 }
@@ -192,8 +196,8 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #fed136;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover {
   color: white;
   background-color: #fec503;
 }
@@ -295,7 +299,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 80px 0;
   }
 }
 .service-heading {
@@ -387,8 +391,8 @@ section h3.section-subheading {
   position: relative;
   min-height: 50px;
 }
-.timeline > li:before,
-.timeline > li:after {
+.timeline > li:after,
+.timeline > li:before {
   content: " ";
   display: table;
 }
@@ -459,8 +463,8 @@ section h3.section-subheading {
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
 }
-.timeline .timeline-body > p,
-.timeline .timeline-body > ul {
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -534,24 +538,28 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.center-img {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center-img .team-member {
   text-align: center;
   margin-bottom: 50px;
 }
-.team-member img {
+.center-img .team-member img {
   margin: 0 auto;
   border: 7px solid white;
 }
-.team-member h4 {
+.center-img .team-member h4 {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
-.team-member p {
+.center-img .team-member p {
   margin-top: 0;
-}
-aside.clients img {
-  margin: 50px auto;
 }
 section#contact {
   background-color: #222222;
@@ -642,15 +650,15 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-ul.social-buttons li a:hover,
+ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:hover {
   background-color: #fed136;
 }
-.btn:focus,
-.btn:active,
 .btn.active,
-.btn:active:focus {
+.btn:active,
+.btn:active:focus,
+.btn:focus {
   outline: none;
 }
 .portfolio-modal .modal-dialog {
@@ -743,7 +751,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
-}
-.devicons {
-  font-size: 50px;
 }
