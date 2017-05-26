@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const config = require('./config.js');
+const path = require('path');
 
 const app = module.exports = express();
 const EMAIL_ACCOUNT_USER = config.email;
@@ -36,6 +37,10 @@ app.post('/email', function(req, res, next) {
     }
     smtpTransport.close();
   });
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve('./public/index.html'));
 });
 
 app.listen(config.port, () => {

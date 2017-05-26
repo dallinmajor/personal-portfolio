@@ -7,6 +7,11 @@
   font-size: 100px;
   color: #1C3144;
 }
+
+.broken {
+    height: 100px !important;
+    width: 100px !important;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
