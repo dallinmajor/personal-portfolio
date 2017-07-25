@@ -762,3 +762,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+  i {
+        font-size: 60px;
+    }

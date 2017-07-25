@@ -744,3 +744,11 @@ body {
     height: 100px;
     width: 100px;
 }
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: 60px;
+    }
+}

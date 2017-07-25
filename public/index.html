@@ -109,6 +109,9 @@
                     <div class="portfolio-caption">
                         <h4>Toyota.com Clone</h4>
                         <p class="text-muted">Build and Price Shop Experience</p>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">GITHUB</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">SITE</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">VIDEO TOUR</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -123,6 +126,8 @@
                     <div class="portfolio-caption">
                         <h4>Charmi</h4>
                         <p class="text-muted">Mobile Dating App</p>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">GITHUB</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">VIDEO TOUR</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -137,6 +142,9 @@
                     <div class="portfolio-caption">
                         <h4>Fun with NASA API</h4>
                         <p class="text-muted">Exploring Space Travel</p>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">GITHUB</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">SITE</a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">VIDEO TOUR</a>
                     </div>
                 </div>
             </div>
@@ -168,8 +176,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <span class="devicons devicon-gulp-plain"></span>
-                        <p class="text-muted">Python</p>
+                        <span class="devicons devicons-heroku"></span>
+                        <p class="text-muted">Heroku</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -205,7 +213,7 @@
                 <div class="col-sm-3">
                     <div class="team-member">
                         <span class="devicons devicons-postgresql"></span>
-                        <p class="text-muted">SQL</p>
+                        <p class="text-muted">PostgresSQL/SQL</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -228,7 +236,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <span class="devicons devicon-gulp-plain"></span>
+                        <span class="devicons devicons-gulp"></span>
                         <p class="text-muted">Build Tools</p>
                     </div>
                 </div>
@@ -246,8 +254,8 @@
                 </div>
                 <div class="col-sm-3 addition">
                     <div class="team-member">
-                        <span class="devicons devicons-code"></span>
-                        <p>Always Adding To The List</p>
+                        <span class="devicons devicons-bootstrap"></span>
+                        <p>Bootstrap</p>
                     </div>
                 </div>
             </div>
@@ -271,15 +279,46 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">I was born and raised in the great state of Utah. I have a diverse professional background including teaching, sales, insurance and have rich volunteer experience. I have fallen in love with web development and have made it not just a passion, but
-                            a career. The continued emergence of new technologies, frameworks, and languages is exciting and makes this a fantastic time to be in this field. 
-                            Please feel free to drop me a line with any questions, tips, or opportunities!</p>
+                        <p class="large text-muted">I was born and raised in the great state of Utah. I have a diverse professional background including
+                            teaching, sales, insurance and have rich volunteer experience. I have fallen in love with web
+                            development and have made it not just a passion, but a career. The continued emergence of new
+                            technologies, frameworks, and languages is exciting and makes this a fantastic time to be in
+                            this field. Please feel free to drop me a line with any questions, tips, or opportunities!</p>
                     </div>
                 </div>
                 <div class="resume">
-                    <p>Click <a href="professional_resume.pdf">this</a> link to check out my professional resume.</p>
+                    <p>Click <a href="professional_resume.pdf">this</a> link to check out my professional resume or follow one
+                        of the below links:</p>
+                </div>
+                    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright"></span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://github.com/murffious" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/paul.murff.7" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href=" https://www.linkedin.com/in/paul-murff/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright"></span>
                 </div>
             </div>
+        </div>
+    </footer>
+               
+                <!-- <div class="social" width="200px"> 
+                    <a><i class="fa fa-linkedin-square"  style="font-size: 50px; margin-right: 30px" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-facebook-square" style="font-size: 50px" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-github" style="font-size: 50px; margin-left: 30px" aria-hidden="true"></i></a></div>
+               
+            </div> -->
     </section>
 
     <!-- Contact Section -->
@@ -297,21 +336,25 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." ng-model="contact.name">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name."
+                                        ng-model="contact.name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." ng-model="contact.email">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address."
+                                        ng-model="contact.email">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number." ng-model="contact.number">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number."
+                                        ng-model="contact.number">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message." ng-model="contact.message"></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."
+                                        ng-model="contact.message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -334,14 +377,14 @@
                     <span class="copyright">Copyright &copy; paulmurff.com 2017</span>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
+                    <!-- <ul class="list-inline social-buttons">
                         <li><a href="https://github.com/murffious"><i class="fa fa-github"></i></a>
                         </li>
                         <li><a href="https://www.facebook.com/paul.murff.7"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href=" https://www.linkedin.com/in/paul-murff/"><i class="fa fa-linkedin"></i></a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-md-4">
                     <span class="copyright">Thank You For Visiting My Page</span>
@@ -368,14 +411,14 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>HomeOne</h2>
-                                <p class="item-intro text-muted">A Self-Managed Home Automation System.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/homeone2.png" alt="">
-                                <p>HomeOne is a home analytics and automation tool developed by myself and three others while attending DevMountain. </p>
+                                <h2>Toyota.com Clone</h2>
+                                <p class="item-intro text-muted">A clone of the "build and price" experience on Toyota's offical site.</p>
+                                <img class="img-responsive img-centered" src="img/toyotatacomabuild.png" alt="">
+                                <p>I developed this site based off the purpose to get a customer to actually have an experience similar to going to a dealership and picking out a car to drive. The end goal is for a person to buy the car at a dealership by emailing their info and "build" to a dealer. </p>
                                 <p>
-                                    You can explore the site <a href="http://homeone.tech/#/">here</a>.</p>
+                                    You can explore the site <a href="http://www.paulmurff.com">here</a>.</p>
                                 <ul class="list-inline">
-                                    <li>Date: September 2016</li>
+                                    <li>Date: May 2017</li>
                                     <li>Category: SEAN Stack (SQL, ExpressJS, AngularJS, NodeJS)</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -401,14 +444,14 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Journey</h2>
-                                <p class="item-intro text-muted">A Client Management System for Youth Case Workers.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/journey2.png" alt="">
-                                <p>Journey is a client management system designed specifically for Case Workers involved in managing at-risk youth. It's a central location for data-sharing between those involved in the youth's treatment.</p>
-                                <p>You can preview Journey <a href="https://steven-isbell.github.io/streamalong/public/#/">here</a>.</p>
+                                <h2>Charmi</h2>
+                                <p class="item-intro text-muted">A mobile-web based dating application modeled after apps like Tinder or Mutual.</p>
+                                <img class="img-responsive img-centered" src="img/Charmi.png" alt="">
+                                <p>Charmi is desgined with mobile use in mind.  This partiucular styling was designed for an iPhone 6 Plus specifically in mind. Users can login with Auth0 (Gmail, Facebook etc.) and search profiles. Users can like or pass on profiles and then messages those they match with.</p>
+                                <p>You can preview Charmi <a href="">here</a>.</p>
                                 <ul class="list-inline">
-                                    <li>Date: August 2016</li>
-                                    <li>Category: SEAN Stack (SQL, ExpressJS, AngularJS, NodeJS)</li>
+                                    <li>Date: June/July 2017</li>
+                                    <li>Tech: React, Redux, Axios, jQuery, Socket.io, Node, SQL</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -438,7 +481,9 @@
                                 <p class="item-intro text-muted">An Aesthetic Weather Application</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/whirlwind2.png" alt="">
                                 <p></p>
-                                <p>You can checkout the application <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">here</a>. Be sure to load the scripts due to googles tightened restrictions on data served over http.</p>
+                                <p>You can checkout the application <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">here</a>.
+                                    Be sure to load the scripts due to googles tightened restrictions on data served over
+                                    http.</p>
                                 <ul class="list-inline">
                                     <li>Date: July 2016</li>
                                     <li>Category: AngularJS Web Application</li>
