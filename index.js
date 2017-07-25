@@ -25,7 +25,7 @@ var smtpTransport = nodemailer.createTransport({
 app.post('/email', function(req, res, next) {
   smtpTransport.sendMail({
     from: `${YOUR_NAME} ${EMAIL_ACCOUNT_USER}`,
-    to: 'steven.isbell.dev@gmail.com',
+    to: 'murff.paul@gmail.com',
     subject: 'Message from Portfolio Site',
     text: `From: ${req.body.name} at ${req.body.email}. ${req.body.message}, and their phone number is ${req.body.number}`
   }, function(error, response) {
